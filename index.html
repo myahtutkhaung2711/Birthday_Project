@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Happy Birthday Ei Myat Thu 🎉</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <!-- Background Music -->
     <audio id="bg-music" src="music/birthday.mp3" autoplay loop></audio>
-    
 
     <div class="card">
         <div class="main">
@@ -20,13 +18,13 @@
                 Every day with you is my favorite day. Wishing you the sweetest birthday full of smiles and love.
             </div>
 
-            <div class="message-box">
+            <div class="message-box" aria-live="polite">
                 <div class="typed" id="typed"></div>
-                <span class="cursor" id="cursor"></span>
+                <span class="cursor" id="cursor" aria-hidden="true"></span>
             </div>
 
             <div class="memory-btn">
-                <button class="btn" id="toggleMemories">Show Memories 📸</button>
+                <button class="btn" id="toggleMemories" type="button">Show Memories 📸</button>
             </div>
 
             <div class="sometimes">
@@ -36,41 +34,42 @@
 
             <div class="sig">With all my love — <strong>Ko Mya Gyi</strong></div>
         </div>
-        
+
         <div class="right">
-            <div class="photo-preview">
-                <img src="img/preview.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview1.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview2.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview3.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview4.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview5.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview6.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview7.jpg" alt="Preview Ei Myat" />
-                <img src="img/preview8.jpg" alt="Preview Ei Myat" />
+            <div class="photo-preview" aria-label="Photo preview slideshow">
+                <img src="img/preview.jpg"  alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview1.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview2.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview3.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview4.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview5.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview6.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview7.jpg" alt="Preview Ei Myat" loading="lazy"/>
+                <img src="img/preview8.jpg" alt="Preview Ei Myat" loading="lazy"/>
             </div>
+
             <div class="controls">
-                <button class="btn" id="replayBtn">Replay Animation</button>
-                <button class="btn" id="playPauseBtn">⏸ Pause Music</button>
+                <button class="btn" id="replayBtn" type="button">Replay Animation</button>
+                <button class="btn" id="playPauseBtn" type="button">⏸ Pause Music</button>
             </div>
-        </div>        
+        </div>
 
         <div class="hearts" id="hearts"></div>
         <canvas id="confetti"></canvas>
     </div>
 
-    <div id="memoriesModal" class="modal">
+    <div id="memoriesModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="memoriesTitle">
         <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Our Sweet Memories ❤️</h2>
-        <div class="slideshow" id="memorySlideshow">
-            <img src="img/memory1.jpg" class="mem-slide active" alt="Memory 1">
-            <img src="img/memory2.jpg" class="mem-slide" alt="Memory 2">
-            <img src="img/memory3.jpg" class="mem-slide" alt="Memory 3">
-        </div>
+            <button class="close" type="button" aria-label="Close memories">&times;</button>
+            <h2 id="memoriesTitle">Our Sweet Memories ❤️</h2>
+            <div class="slideshow" id="memorySlideshow">
+                <img src="img/memory1.jpg" class="mem-slide active" alt="Memory 1" loading="lazy">
+                <img src="img/memory2.jpg" class="mem-slide" alt="Memory 2" loading="lazy">
+                <img src="img/memory3.jpg" class="mem-slide" alt="Memory 3" loading="lazy">
+            </div>
         </div>
     </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
