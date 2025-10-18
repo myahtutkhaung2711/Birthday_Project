@@ -4,9 +4,9 @@ On your special day I wish you a sky full of smiles and a heart full of dreams c
 
 You are my joy, my safe place, and the reason I smile every day.
 
-Happy Birthday. I love you always. 🎂🌸
+Happy Birthday, My Love. I love you always and forever. 🎂🌸
 
-— Ko Mya Gyi`;
+- Ko Mya Gyi`;
 
 const typedEl = document.getElementById('typed');
 const cursor = document.getElementById('cursor');
