@@ -67,7 +67,9 @@ h1 {
 
 .sub {
     margin:6px 0 18px 0; 
+    padding: auto;
     font-size:18px; 
+    font-weight: 500;
     color:#555;
 }
 

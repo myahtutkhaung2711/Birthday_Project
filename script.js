@@ -49,6 +49,9 @@ function showMemSlide() {
 setInterval(showMemSlide, 3000);
 
 const quotes = [
+  "Every moment with you feels like a beautiful dream I never want to end 💖",
+  "You are the reason my heart feels at home wherever we are together. ❤️",
+  "You’re not just my love — you’re my peace, my smile, and my forever. 💕",
   "Every time I see you, my heart skips a beat 💕",
   "I still can’t believe I get to share my life with you ❤️",
   "Your smile is my favorite part of every day 😍",
